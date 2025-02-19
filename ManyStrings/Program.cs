@@ -9,7 +9,7 @@ namespace ManyStrings
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-
+            //New String variables
             string messageToWorld = "Hello world! \u2735";
             string soHappy = "I love this \n It isn't lovely \rIt is so ";
             string pointer = "\u27A0 \t \uFD3Elp1\uFD3F";
@@ -18,6 +18,15 @@ namespace ManyStrings
             Console.WriteLine(messageToWorld);
             Console.WriteLine(soHappy);
             Console.WriteLine(pointer);
+
+            //New concatenation variables
+
+            string name = "Goncalo";
+            string welcome = "Hello";
+
+            Console.WriteLine(welcome + " " + name);
+            Console.WriteLine($"{welcome} {name}, how are you?");
+
 
            
         }
