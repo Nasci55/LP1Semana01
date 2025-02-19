@@ -7,12 +7,15 @@ namespace AskForInput
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine ("Please insert an integer number: ");
+            Console.WriteLine("Please insert an integer number: ");
             string userInput = Console.ReadLine();
 
             int userInputInt = Convert.ToInt16(userInput);
-
             
+            
+            Console.WriteLine("Please insert a real number: ");
+            string secondUserInput = Console.ReadLine();
+
 
         }
     }
