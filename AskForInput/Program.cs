@@ -10,13 +10,15 @@ namespace AskForInput
             Console.WriteLine("Please insert an integer number: ");
             string userInput = Console.ReadLine();
 
-            int userInputInt = Convert.ToInt16(userInput);
+            float userInputInt = int.Parse(userInput);     
             
             
             Console.WriteLine("Please insert a real number: ");
             string secondUserInput = Console.ReadLine();
 
-            float secondUserInputFloat = Convert.ToSingle(secondUserInput);
+            float secondUserInputFloat = float.Parse(secondUserInput);
+
+            Console.WriteLine($"{userInputInt + secondUserInputFloat}");
 
 
         }
