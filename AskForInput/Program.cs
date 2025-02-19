@@ -16,6 +16,8 @@ namespace AskForInput
             Console.WriteLine("Please insert a real number: ");
             string secondUserInput = Console.ReadLine();
 
+            float secondUserInputFloat = Convert.ToSingle(secondUserInput);
+
 
         }
     }
