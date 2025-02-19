@@ -7,6 +7,9 @@ namespace ManyStrings
     {
         private static void Main(string[] args)
         {
+            double xx = 1.23456;
+            int ii = 19;
+
             Console.OutputEncoding = Encoding.UTF8;
 
             //New String variables
@@ -28,7 +31,13 @@ namespace ManyStrings
             Console.WriteLine($"{welcome} {name}, how are you?");
 
 
-           
+
+            //Changing the format of double and int variables
+
+            Console.WriteLine($"{xx:f2}");
+            Console.WriteLine($"{xx:p1}");
+            Console.WriteLine($"0x{ii:x}");
+            Console.WriteLine($"{ii:c}");
         }
     }
 }
