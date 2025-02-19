@@ -26,7 +26,13 @@ namespace VariousTypes
             //Real Variables
             double pi = 3.14159265359;
             float shortPi = 3.1415f;
-            decimal  exactPi = 3.141592m;   
+            decimal  exactPi = 3.141592m;
+            
+
+            //Boolean Variables
+            bool blueSky = true;
+            bool numberCondition = 10 < 3;
+
 
 
             
@@ -40,6 +46,9 @@ namespace VariousTypes
             Console.WriteLine(pi);
             Console.WriteLine(shortPi);
             Console.WriteLine(exactPi);
+            Console.WriteLine(blueSky);
+            Console.WriteLine(numberCondition);
+
 
         }
     }
