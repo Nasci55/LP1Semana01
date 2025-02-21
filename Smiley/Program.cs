@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Security;
+using System.Text;
+using System.Globalization;
 
 namespace Smiley
 {
@@ -6,7 +9,22 @@ namespace Smiley
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            Console.OutputEncoding = Encoding.UTF8;
+            string userInput; 
+            
+            userInput = Console.ReadLine();
+
+            int Hexadecimal = System.Int32.Parse(userInput, NumberStyles.AllowHexSpecifier);
+
+
+            System.Console.WriteLine( System.Char.ConvertFromUtf32(Hexadecimal)); 
+
+           
+            
+            
+
+            
+            
         }
     }
 }
